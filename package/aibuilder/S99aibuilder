@@ -1,0 +1,16 @@
+#!/bin/sh
+case "${1:-start}" in
+  start)
+    echo "AI Builder service scaffold: orchestration engine is not implemented in v0.1"
+    ;;
+  stop)
+    exit 0
+    ;;
+  restart)
+    echo "AI Builder service scaffold: restart is a no-op until the engine exists"
+    ;;
+  *)
+    echo "Usage: $0 {start|stop|restart}" >&2
+    exit 2
+    ;;
+esac
