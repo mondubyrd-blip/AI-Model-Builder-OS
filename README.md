@@ -41,3 +41,41 @@ This repository contains an architecture/development scaffold, not a bootable IS
 This prototype does not claim that every NPU is usable for every AI workload. Accelerator support is hardware/backend dependent.
 
 It also does not make an ownership claim about AI-generated synthetic data. Every dataset/model should carry provenance and applicable license/terms information.
+
+## Original v0.1 source preservation
+
+The original uploaded archive is preserved byte-for-byte at:
+- `archive/AI_Model_Builder_OS_v0.1_prototype.zip`
+
+Its SHA-256 is recorded in `docs/ORIGINAL_ARCHIVE_SHA256.txt`. The archive is the historical source baseline; subsequent engineering work is kept as separate repository changes.
+
+## Current hardware target
+
+The primary port target is now **Samsung Chromebook 4 — BLUEBIRD**. The previous Peppy profile remains as a legacy reference and is not being used as the Bluebird identity.
+
+- Target profile: `configs/bluebird_x86_64.example`
+- Port record: `docs/BLUEBIRD_PORT.md`
+- Validation matrix: `docs/BLUEBIRD_VALIDATION_MATRIX.md`
+- Read-only inventory: `scripts/bluebird_inventory.sh`
+
+The profile is proposed pending actual device validation. No bootable Bluebird image is claimed.
+
+## Build baseline
+
+The selected build-system baseline is Buildroot 2025.02.20 from the 2025.02 LTS series. See `docs/BUILDROOT_BASELINE.md`. Signature/checksum verification and a reproducible build are still pending.
+
+## Local validation
+
+Run:
+
+```sh
+./scripts/validate_project.sh
+```
+
+For the Bluebird inventory, boot a trusted Linux live environment and run:
+
+```sh
+sudo ./scripts/bluebird_inventory.sh
+```
+
+The inventory script is read-only. It does not mount or write internal storage. Review its output before treating any device capability as established.
