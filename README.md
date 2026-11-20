@@ -65,7 +65,7 @@ The profile is proposed pending actual device validation. No bootable Bluebird i
 
 ## Build baseline
 
-The selected build-system baseline is Buildroot 2025.02.20 from the 2025.02 LTS series. See `docs/BUILDROOT_BASELINE.md`. Signature/checksum verification and a reproducible build are still pending.
+The selected build-system baseline is Buildroot 2025.02.20 from the 2025.02 LTS series. See `docs/BUILDROOT_BASELINE.md`. An initial external tree and package for local hardware inventory tools are in `buildroot-external/`. Signature/checksum verification and a reproducible build are still pending.
 
 ## Local validation
 
