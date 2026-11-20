@@ -1,0 +1,7 @@
+config BR2_PACKAGE_AIBUILDER
+	bool "AI Model Builder node tools"
+	select BR2_PACKAGE_PYTHON3
+	help
+	  Install the local, read-only hardware capability inventory tools
+	  and the capability JSON schema. This package does not start an
+	  AI training service or modify storage.
