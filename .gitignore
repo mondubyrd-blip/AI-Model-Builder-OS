@@ -1,0 +1,24 @@
+# Buildroot generated output and downloads
+/output/
+/dl/
+/buildroot-*/
+*.img
+*.iso
+*.wic
+*.cpio
+*.rootfs
+*.map
+*.log
+
+# Local runtime data
+/var/lib/aibuilder/
+/data/models/
+/data/datasets/
+/data/checkpoints/
+/data/exports/
+
+# Editor and temporary files
+*~
+*.swp
+*.tmp
+.DS_Store
