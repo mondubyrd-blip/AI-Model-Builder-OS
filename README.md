@@ -57,6 +57,9 @@ The primary port target is now **Samsung Chromebook 4 — BLUEBIRD**. The previo
 - Port record: `docs/BLUEBIRD_PORT.md`
 - Validation matrix: `docs/BLUEBIRD_VALIDATION_MATRIX.md`
 - Read-only inventory: `scripts/bluebird_inventory.sh`
+- Machine-readable capability report: `scripts/capability_probe.py`
+- Capability schema: `schemas/node-capabilities.schema.json`
+- Discovery contract: `docs/CAPABILITY_DISCOVERY.md`
 
 The profile is proposed pending actual device validation. No bootable Bluebird image is claimed.
 
