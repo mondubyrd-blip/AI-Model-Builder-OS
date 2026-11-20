@@ -11,6 +11,8 @@ Updated: 2026-11-19
 - [x] Runtime-tree script corrected to use POSIX shell syntax.
 - [x] Read-only hardware inventory utility added.
 - [x] Local validation script added.
+- [x] Machine-readable capability probe and JSON Schema added.
+- [x] Capability probe validated against its schema in the development container.
 
 ## Build system
 
