@@ -10,6 +10,9 @@ Date: 2026-11-19
 - Runtime-tree script created the expected directory set under a temporary directory.
 - Runtime-tree script rejected / as an unsafe destination.
 - BLUEBIRD inventory script executed without shell/runtime errors in the available test container.
+- Python capability probe executed and emitted valid JSON.
+- Capability report passed validation against the committed JSON Schema.
+- Python source passed bytecode compilation.
 
 ## Environment limitation
 
