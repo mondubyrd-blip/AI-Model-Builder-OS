@@ -1,0 +1,5 @@
+menu "AI Model Builder OS"
+
+source "$BR2_EXTERNAL_AIBUILDER_PATH/package/aibuilder/Config.in"
+
+endmenu
