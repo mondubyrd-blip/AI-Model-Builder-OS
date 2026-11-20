@@ -23,6 +23,7 @@ ShellCheck was not installed, so ShellCheck analysis was skipped.
 ## Not yet tested
 
 - Buildroot source signature/checksum verification.
+- Buildroot external-tree/package syntax validation against the pinned source.
 - Buildroot configuration parsing or compilation.
 - Kernel configuration.
 - Boot image generation.
