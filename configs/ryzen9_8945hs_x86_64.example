@@ -1,0 +1,8 @@
+# AMD Ryzen 9 8945HS profile placeholder
+ARCH=x86_64
+BOOT=UEFI
+PROFILE=ryzen9_8945hs
+ACCELERATOR_POLICY=auto
+NETWORK=optional
+DASHBOARD=enabled
+DESTRUCTIVE_INSTALL=false
