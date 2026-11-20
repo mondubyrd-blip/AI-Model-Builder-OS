@@ -1,0 +1,10 @@
+{
+  "name": "AI Model Builder OS",
+  "version": "0.1-prototype",
+  "architecture": "x86_64",
+  "destructive_install": false,
+  "cloud_required": false,
+  "purpose": "hardware-adaptive AI model-builder appliance architecture prototype",
+  "test_order": ["Peppy", "Acer R11", "Dell AIO", "HP ENVY T301 + dedicated GPU", "Ryzen 9 8945HS"],
+  "additional_hardware_targets": [{"name":"Samsung Chromebook 4", "board":"BLUEBIRD", "platform_family":"Octopus", "cpu":"Intel Celeron N4020", "memory_mb":4096, "status":"profile proposed; requires device-level validation"}]
+}
