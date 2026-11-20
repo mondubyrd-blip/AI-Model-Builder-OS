@@ -5,6 +5,34 @@
   "destructive_install": false,
   "cloud_required": false,
   "purpose": "hardware-adaptive AI model-builder appliance architecture prototype",
-  "test_order": ["Peppy", "Acer R11", "Dell AIO", "HP ENVY T301 + dedicated GPU", "Ryzen 9 8945HS"],
-  "additional_hardware_targets": [{"name":"Samsung Chromebook 4", "board":"BLUEBIRD", "platform_family":"Octopus", "cpu":"Intel Celeron N4020", "memory_mb":4096, "status":"profile proposed; requires device-level validation"}]
+  "test_order": [
+    "Samsung Chromebook 4 BLUEBIRD",
+    "Acer R11",
+    "Dell AIO",
+    "HP ENVY T301 + dedicated GPU",
+    "Ryzen 9 8945HS"
+  ],
+  "additional_hardware_targets": [
+    {
+      "name": "Samsung Chromebook 4",
+      "board": "BLUEBIRD",
+      "platform_family": "Octopus",
+      "cpu": "Intel Celeron N4020",
+      "memory_mb": 4096,
+      "status": "profile proposed; requires device-level validation"
+    }
+  ],
+  "legacy_profiles": [
+    "Peppy"
+  ],
+  "buildroot": {
+    "series": "2025.02 LTS",
+    "release": "2025.02.20",
+    "status": "selected; verification and build pending"
+  },
+  "source_archive": {
+    "path": "archive/AI_Model_Builder_OS_v0.1_prototype.zip",
+    "sha256": "583fae3770873b47982682dcb08c876a085617f3aec4a953fb436cc1fbfc1638",
+    "preserved_unchanged": true
+  }
 }
