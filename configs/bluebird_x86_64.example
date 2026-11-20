@@ -1,0 +1,13 @@
+# Samsung Chromebook 4 — BLUEBIRD profile
+# Proposed target profile; hardware validation is pending.
+ARCH=x86_64
+BOOT=UEFI
+PROFILE=bluebird
+DEVICE=Samsung_Chromebook_4
+PLATFORM_FAMILY=octopus
+CPU=Intel_Celeron_N4020
+MEMORY_MB=4096
+ACCELERATOR_POLICY=auto
+NETWORK=optional
+DASHBOARD=enabled
+DESTRUCTIVE_INSTALL=false
