@@ -1,0 +1,8 @@
+# Peppy profile placeholder — preserved from v0.1
+ARCH=x86_64
+BOOT=UEFI
+PROFILE=peppy
+ACCELERATOR_POLICY=auto
+NETWORK=optional
+DASHBOARD=enabled
+DESTRUCTIVE_INSTALL=false
