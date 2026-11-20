@@ -28,7 +28,7 @@
   "buildroot": {
     "series": "2025.02 LTS",
     "release": "2025.02.20",
-    "status": "selected; verification and build pending"
+    "status": "2025.02.20 LTS selected; external package scaffold drafted; source verification and build pending"
   },
   "source_archive": {
     "path": "archive/AI_Model_Builder_OS_v0.1_prototype.zip",
