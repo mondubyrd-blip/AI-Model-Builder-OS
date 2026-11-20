@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:aibuilder:node-capabilities:1.0.0",
+  "title": "AI Model Builder Node Capabilities",
+  "type": "object",
+  "required": ["schema_version", "collection", "system", "board", "cpu", "memory", "pci_devices", "block_devices", "graphics", "network_devices", "interfaces"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "collection": {
+      "type": "object",
+      "required": ["method", "network_used", "storage_modified", "serial_numbers_collected"],
+      "properties": {
+        "method": {"const": "local_sysfs_procfs"},
+        "network_used": {"const": false},
+        "storage_modified": {"const": false},
+        "serial_numbers_collected": {"const": false}
+      },
+      "additionalProperties": false
+    },
+    "system": {"type": "object", "required": ["kernel", "platform"], "properties": {"kernel": {"type": "string"}, "platform": {"type": "string"}}},
+    "board": {"type": "object", "additionalProperties": {"type": "string"}},
+    "cpu": {"type": "object", "required": ["architecture"], "properties": {"architecture": {"type": "string"}, "model": {"type": "string"}, "vendor": {"type": "string"}, "logical_processors": {"type": ["integer", "null"]}}},
+    "memory": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+    "pci_devices": {"type": "array", "items": {"type": "object", "required": ["address"], "properties": {"address": {"type": "string"}}, "additionalProperties": {"type": "string"}}},
+    "block_devices": {"type": "array", "items": {"type": "object", "required": ["name"], "properties": {"name": {"type": "string"}}, "additionalProperties": {"type": "string"}}},
+    "graphics": {"type": "array", "items": {"type": "object", "required": ["name"], "properties": {"name": {"type": "string"}}, "additionalProperties": {"type": "string"}}},
+    "network_devices": {"type": "array", "items": {"type": "object", "required": ["interface"], "properties": {"interface": {"type": "string"}}, "additionalProperties": {"type": "string"}}},
+    "interfaces": {"type": "object", "additionalProperties": {"type": "boolean"}}
+  },
+  "additionalProperties": false
+}
