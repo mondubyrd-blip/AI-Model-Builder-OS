@@ -1,0 +1,8 @@
+# Dell AIO profile placeholder
+ARCH=x86_64
+BOOT=UEFI
+PROFILE=dell_aio
+ACCELERATOR_POLICY=auto
+NETWORK=optional
+DASHBOARD=enabled
+DESTRUCTIVE_INSTALL=false
