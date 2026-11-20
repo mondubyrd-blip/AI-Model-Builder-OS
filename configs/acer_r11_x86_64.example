@@ -1,0 +1,8 @@
+# Acer R11 profile placeholder
+ARCH=x86_64
+BOOT=UEFI
+PROFILE=acer_r11
+ACCELERATOR_POLICY=auto
+NETWORK=optional
+DASHBOARD=enabled
+DESTRUCTIVE_INSTALL=false
