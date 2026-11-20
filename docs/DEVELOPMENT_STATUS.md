@@ -18,7 +18,8 @@ Updated: 2026-11-19
 
 - [x] Buildroot 2025.02 LTS family selected.
 - [ ] Verify official release signature and checksum.
-- [ ] Create a Buildroot external tree with release-compatible package definitions.
+- [x] Draft initial Buildroot external tree and package integration for the read-only inventory tools.
+- [ ] Validate external-tree/package syntax against the pinned Buildroot source.
 - [ ] Generate and review a generic x86_64 baseline defconfig.
 - [ ] Pin a kernel version and kernel configuration after hardware inventory.
 - [ ] Build reproducibly in a disposable Linux build environment.
